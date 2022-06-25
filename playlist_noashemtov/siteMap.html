@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>מפת האתר - Playlist.</title>
+    <meta name="description" content="siteMap playlist" />
+    <meta name="keywords" content="siteMap" />
+    <meta name="author" content="נועה שם טוב" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/211876_play_icon.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/Homepage.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+</head>
+<body onload="showSlides(1)">
+    <div class="container" id="map">
+        <header>
+            <nav class="nav" aria-label="main-nav">
+                <ul>
+                    <li class="homePage"> <a href="index.html"> .Playlist</a></li>
+                    <li>
+                        <a href="moodPlaylist.html">Mood</a>
+                        <ul>
+                            <li id="page1-1"><a href="drivePlaylist.html">בנסיעה</a></li>
+                            <li class="notAllowed">בכפיים</li>
+                            <li class="notAllowed">ברגליים</li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">אודות</a> </li>
+                </ul>
+            </nav>
+            <nav class="pirorim">
+                <ol>
+                    <li>מפת האתר</li>
+                </ol>
+            </nav>
+        </header>
+
+        <main id="mapM">
+            <div id="mapsC" class="Cotert">
+                <h1>מפת האתר</h1>
+                <h2> הדפים שפותחו במסגרת הפרוייקט</h2>
+            </div>
+
+            <div id="maps">
+                <p>אלו הם הדפים שפותחו במסגרת הפרוייקט : </p>
+                <ul class="pages">
+                    <li> <a href="about.html"> עמוד אודות</a> </li>
+                    <li> <a href="siteMap.html"> מפת האתר</a> </li>
+                    <li> <a href="moodPlaylist.html">Mood </a> </li>
+                    <li> <a href="drivePlaylist.html"> בנסיעה </a> </li>
+                    <li> <a href="index.html"> דף הבית</a> </li>
+                    <li> <a href="contactUs.html"> צור קשר</a> </li>
+                    <li class="notAllowed"> <a href="#"> בכפיים</a></li>
+                    <li class="notAllowed"> <a href="#"> ברגליים</a></li>
+
+                </ul>
+            </div>
+
+        </main>
+
+        <div id="noga">
+            <h2 style="text-align:center">השירים המומלצים שלנו באתר</h2>
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/800px-שרית_חדד_אשליות_מתוקות.jpeg" style="width:100%" onclick="currentSlide(1)" alt="יאללה לך הביתה מוטי">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Beatles_-_Abbey_Road.jpg" style="width:100%" onclick="currentSlide(2)" alt="beatels">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/HamsaBandIsrael2003AlbumCover.jpg" style="width:100%" onclick="currentSlide(3)" alt="להקת חמסה - תלך כפרה עליי">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/I'm_Coming_Out_-_Diana_Ross.jpg" style="width:100%" onclick="currentSlide(4)" alt="Im coming out">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Jiggy.jpg" style="width:100%" onclick="currentSlide(5)" alt="jiggy">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Byon.jpg" style="width:100%" onclick="currentSlide(6)" alt="נערה חשמלית">
+                </div>
+            </div>
+
+            <div class="gallery">
+                <div class="mySlides">
+                    <div class="numbertext">1 מתוך 6 </div>
+                    <img src="images/800px-שרית_חדד_אשליות_מתוקות.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 מתוך 6</div>
+                    <img src="images/Beatles_-_Abbey_Road.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 מתוך 6</div>
+                    <img src="images/HamsaBandIsrael2003AlbumCover.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 מתוך 6</div>
+                    <img src="images/I'm_Coming_Out_-_Diana_Ross.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 מתוך 6</div>
+                    <img src="images/Jiggy.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 מתוך 6</div>
+                    <img src="images/Byon.jpg" style="width:100%">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <a href="https://noashemtov.github.io/noashemtov-playlist1/playlist_noashemtov/about.html">|אודות האתר|</a>
+        <a href="https://noashemtov.github.io/noashemtov-playlist1/playlist_noashemtov/contactUs.html">|צור קשר|</a>
+        <a href="https://noashemtov.github.io/noashemtov-playlist1/playlist_noashemtov/siteMap.html"> |מפת האתר|</a><br>
+        <span> נעשה שימוש בתמונות מהאתר Unsplash </span>
+    </footer>
+
+</body>
+</html>
